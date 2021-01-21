@@ -19,21 +19,14 @@ Note that this example may create resources which can cost money. Run `terraform
 resources.
 
 ## Requirements
-
-| Name | Version |
-|------|---------|
-| terraform | > = 0.14.5 |
-| aws | > = 2.70 |
-
-## Providers
-
-| Name | Version |
-|------|---------|
-| aws | > = 2.65 |
+- Setup and configure AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
+- Setup Terraform CLI: https://learn.hashicorp.com/tutorials/terraform/install-cli
 
 ## Inputs
 
 - Region (default ap-southeast-1)
+- AMI ID (default ami-06fb5332e8e3e577a - Ubuntu 18.04 LTS)
+- EC2 Instance Type (default t2.micro)
 
 ## Outputs
 
