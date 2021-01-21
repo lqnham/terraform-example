@@ -39,7 +39,7 @@ resource "aws_security_group" "web-server-security-group" {
 
 
 resource "aws_instance" "web-server" {
-  ami = "ami-06fb5332e8e3e577a"
+  ami = var.ami_id
   instance_type = "t2.micro"
   key_name = "aws-demo"
   vpc_security_group_ids = [
